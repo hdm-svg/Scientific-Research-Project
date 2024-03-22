@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar 22 10:03:20 2024
+# Process ID: 28808
+# Current directory: D:/Vivado/NCKH/ascon_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12304 D:\Vivado\NCKH\ascon_test\ascon_test.xpr
+# Log file: D:/Vivado/NCKH/ascon_test/vivado.log
+# Journal file: D:/Vivado/NCKH/ascon_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/NCKH/ascon_test/ascon_test.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
+file mkdir D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new
+close [ open D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc w ]
+add_files -fileset constrs_1 D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc
+set_property target_constrs_file D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_simulation
+source ascon_update_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/ascon_update_tb/uut}} 
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+save_constraints
+close_sim

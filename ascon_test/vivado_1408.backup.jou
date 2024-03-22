@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar  1 11:16:31 2024
+# Process ID: 1408
+# Current directory: D:/Vivado/NCKH/ascon_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14520 D:\Vivado\NCKH\ascon_test\ascon_test.xpr
+# Log file: D:/Vivado/NCKH/ascon_test/vivado.log
+# Journal file: D:/Vivado/NCKH/ascon_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/NCKH/ascon_test/ascon_test.xpr
+update_compile_order -fileset sources_1

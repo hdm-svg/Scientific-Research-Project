@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar 22 10:03:20 2024
+# Process ID: 28808
+# Current directory: D:/Vivado/NCKH/ascon_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12304 D:\Vivado\NCKH\ascon_test\ascon_test.xpr
+# Log file: D:/Vivado/NCKH/ascon_test/vivado.log
+# Journal file: D:/Vivado/NCKH/ascon_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/NCKH/ascon_test/ascon_test.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Vivado/NCKH/ascon_test/ascon_test.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1162.426 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1392.977 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1471.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1618.375 ; gain = 455.949
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
+file mkdir D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new
+close [ open D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc w ]
+add_files -fileset constrs_1 D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc
+set_property target_constrs_file D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Mar 22 10:23:52 2024] Launched synth_1...
+Run output will be captured here: D:/Vivado/NCKH/ascon_test/ascon_test.runs/synth_1/runme.log
+close_design
+close_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2138.254 ; gain = 1.594
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2138.254 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2138.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2144.016 ; gain = 5.762
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'msg' redefined [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sim_1/new/ascon_update_tb.sv:10]
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+"xelab -wto c88c8ee0bcb144a38cbd60fd4a77fee9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c88c8ee0bcb144a38cbd60fd4a77fee9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update(msg=56'b01100001011...
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ascon_update_tb_behav -key {Behavioral:sim_1:Functional:ascon_update_tb} -tclbatch {ascon_update_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source ascon_update_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2354.781 ; gain = 23.773
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ascon_update_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2354.781 ; gain = 28.816
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/ascon_update_tb/uut}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+"xelab -wto c88c8ee0bcb144a38cbd60fd4a77fee9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c88c8ee0bcb144a38cbd60fd4a77fee9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2370.355 ; gain = 0.000
+run 10 us
+$finish called at time : 1090 ns : File "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sim_1/new/ascon_update_tb.sv" Line 44
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'msg' redefined [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sim_1/new/ascon_update_tb.sv:11]
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2400.555 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_test/ascon_test.sim/sim_1/behav/xsim'
+"xelab -wto c88c8ee0bcb144a38cbd60fd4a77fee9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c88c8ee0bcb144a38cbd60fd4a77fee9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update(msg=288'b0110000101...
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 2400.555 ; gain = 0.000
+run 10 us
+$finish called at time : 1090 ns : File "D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sim_1/new/ascon_update_tb.sv" Line 44
+run 10 us
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 22 11:24:38 2024...

@@ -1,0 +1,518 @@
+
+*** Running vivado
+    with args -log ascon_update.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ascon_update.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source ascon_update.tcl -notrace
+Command: synth_design -top ascon_update -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19296
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1205.645 ; gain = 56.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ascon_update' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:11]
+	Parameter msg bound to: 64'b0110000101100010011000110110010001100101011001100110011101101000 
+	Parameter k bound to: 0 - type: integer 
+	Parameter r bound to: 64 - type: integer 
+	Parameter a bound to: 12 - type: integer 
+	Parameter a_b bound to: 0 - type: integer 
+	Parameter h bound to: 256 - type: integer 
+	Parameter l bound to: 256 - type: integer 
+	Parameter b bound to: 12 - type: integer 
+	Parameter IV bound to: 64'b0000000001000000000011000000000000000000000000000000000100000000 
+	Parameter bits_msg bound to: 64 - type: integer 
+	Parameter s bound to: 1 - type: integer 
+	Parameter IV_0 bound to: 64'b1110111010010011100110001010101011011011011001111111000000111101 
+	Parameter IV_1 bound to: 64'b1000101110110010000110000011000111000110000011110001000000000010 
+	Parameter IV_2 bound to: 64'b1011010010001010100100101101101110011000110101011101101001100010 
+	Parameter IV_3 bound to: 64'b0100001100011000100110010010000110111000111110001110001111101000 
+	Parameter IV_4 bound to: 64'b0011010010001111101001011100100111010101001001011110000101000000 
+INFO: [Synth 8-6157] synthesizing module 'permutation_loop' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/permutation_loop.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Permutation' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/Permutation.sv:2]
+	Parameter LUT bound to: 160'b0010001011111111010011010101010100100010110110010101000100101110100011001101110011110100110011101110000000110110001110001000001100000011100110110010100111110111 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/Permutation.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Permutation' (1#1) [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/Permutation.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'permutation_loop' (2#1) [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/permutation_loop.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_update' (3#1) [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1273.113 ; gain = 124.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1273.113 ; gain = 124.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1273.113 ; gain = 124.047
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1273.113 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1377.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1377.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.652 ; gain = 228.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.652 ; gain = 228.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.652 ; gain = 228.586
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'H_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:135]
+WARNING: [Synth 8-327] inferring latch for variable 'xo0_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:158]
+WARNING: [Synth 8-327] inferring latch for variable 'xo0_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:108]
+WARNING: [Synth 8-327] inferring latch for variable 'xo1_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:158]
+WARNING: [Synth 8-327] inferring latch for variable 'xo1_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:109]
+WARNING: [Synth 8-327] inferring latch for variable 'xo2_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:158]
+WARNING: [Synth 8-327] inferring latch for variable 'xo2_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:110]
+WARNING: [Synth 8-327] inferring latch for variable 'xo3_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:158]
+WARNING: [Synth 8-327] inferring latch for variable 'xo3_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:111]
+WARNING: [Synth 8-327] inferring latch for variable 'xo4_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:158]
+WARNING: [Synth 8-327] inferring latch for variable 'xo4_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:112]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:139]
+WARNING: [Synth 8-327] inferring latch for variable 'i_nx_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:132]
+WARNING: [Synth 8-327] inferring latch for variable 'run_absort_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:133]
+WARNING: [Synth 8-327] inferring latch for variable 'run_init_IV_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:138]
+WARNING: [Synth 8-327] inferring latch for variable 'run_p_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:134]
+WARNING: [Synth 8-327] inferring latch for variable 'round_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:63]
+WARNING: [Synth 8-327] inferring latch for variable 'init_x_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+WARNING: [Synth 8-327] inferring latch for variable 'init_x_reg' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1377.652 ; gain = 228.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   3 Input     64 Bit         XORs := 5     
+	   2 Input     64 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 12    
++---Registers : 
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input  256 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 7     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 8     
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 1377.652 ; gain = 228.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-----------------+-----------------+---------------+----------------+
+|Module Name      | RTL Object      | Depth x Width | Implemented As | 
++-----------------+-----------------+---------------+----------------+
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|Permutation      | LUT             | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
+|permutation_loop | Permutation/LUT | 32x5          | LUT            | 
++-----------------+-----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1377.652 ; gain = 228.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1388.875 ; gain = 239.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1388.875 ; gain = 239.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1390.484 ; gain = 241.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1390.484 ; gain = 241.418
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[128] with 1st driver pin 'init_x_reg[128]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[128] with 2nd driver pin 'init_x_reg[128]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[129] with 1st driver pin 'init_x_reg[129]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[129] with 2nd driver pin 'init_x_reg[129]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[130] with 1st driver pin 'init_x_reg[130]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[130] with 2nd driver pin 'init_x_reg[130]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[131] with 1st driver pin 'init_x_reg[131]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[131] with 2nd driver pin 'init_x_reg[131]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[132] with 1st driver pin 'init_x_reg[132]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[132] with 2nd driver pin 'init_x_reg[132]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[133] with 1st driver pin 'init_x_reg[133]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[133] with 2nd driver pin 'init_x_reg[133]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[134] with 1st driver pin 'init_x_reg[134]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[134] with 2nd driver pin 'init_x_reg[134]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[135] with 1st driver pin 'init_x_reg[135]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[135] with 2nd driver pin 'init_x_reg[135]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[136] with 1st driver pin 'init_x_reg[136]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[136] with 2nd driver pin 'init_x_reg[136]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[137] with 1st driver pin 'init_x_reg[137]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[137] with 2nd driver pin 'init_x_reg[137]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[138] with 1st driver pin 'init_x_reg[138]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[138] with 2nd driver pin 'init_x_reg[138]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[139] with 1st driver pin 'init_x_reg[139]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[139] with 2nd driver pin 'init_x_reg[139]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[140] with 1st driver pin 'init_x_reg[140]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[140] with 2nd driver pin 'init_x_reg[140]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[141] with 1st driver pin 'init_x_reg[141]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[141] with 2nd driver pin 'init_x_reg[141]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[142] with 1st driver pin 'init_x_reg[142]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[142] with 2nd driver pin 'init_x_reg[142]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[143] with 1st driver pin 'init_x_reg[143]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[143] with 2nd driver pin 'init_x_reg[143]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[144] with 1st driver pin 'init_x_reg[144]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[144] with 2nd driver pin 'init_x_reg[144]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[145] with 1st driver pin 'init_x_reg[145]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[145] with 2nd driver pin 'init_x_reg[145]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[146] with 1st driver pin 'init_x_reg[146]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[146] with 2nd driver pin 'init_x_reg[146]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[147] with 1st driver pin 'init_x_reg[147]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[147] with 2nd driver pin 'init_x_reg[147]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[148] with 1st driver pin 'init_x_reg[148]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[148] with 2nd driver pin 'init_x_reg[148]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[149] with 1st driver pin 'init_x_reg[149]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[149] with 2nd driver pin 'init_x_reg[149]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[150] with 1st driver pin 'init_x_reg[150]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[150] with 2nd driver pin 'init_x_reg[150]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[151] with 1st driver pin 'init_x_reg[151]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[151] with 2nd driver pin 'init_x_reg[151]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[152] with 1st driver pin 'init_x_reg[152]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[152] with 2nd driver pin 'init_x_reg[152]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[153] with 1st driver pin 'init_x_reg[153]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[153] with 2nd driver pin 'init_x_reg[153]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[154] with 1st driver pin 'init_x_reg[154]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[154] with 2nd driver pin 'init_x_reg[154]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[155] with 1st driver pin 'init_x_reg[155]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[155] with 2nd driver pin 'init_x_reg[155]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[156] with 1st driver pin 'init_x_reg[156]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[156] with 2nd driver pin 'init_x_reg[156]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[157] with 1st driver pin 'init_x_reg[157]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[157] with 2nd driver pin 'init_x_reg[157]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[158] with 1st driver pin 'init_x_reg[158]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[158] with 2nd driver pin 'init_x_reg[158]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[159] with 1st driver pin 'init_x_reg[159]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[159] with 2nd driver pin 'init_x_reg[159]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[160] with 1st driver pin 'init_x_reg[160]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[160] with 2nd driver pin 'init_x_reg[160]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[161] with 1st driver pin 'init_x_reg[161]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[161] with 2nd driver pin 'init_x_reg[161]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[162] with 1st driver pin 'init_x_reg[162]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[162] with 2nd driver pin 'init_x_reg[162]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[163] with 1st driver pin 'init_x_reg[163]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[163] with 2nd driver pin 'init_x_reg[163]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[164] with 1st driver pin 'init_x_reg[164]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[164] with 2nd driver pin 'init_x_reg[164]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[165] with 1st driver pin 'init_x_reg[165]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[165] with 2nd driver pin 'init_x_reg[165]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[166] with 1st driver pin 'init_x_reg[166]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[166] with 2nd driver pin 'init_x_reg[166]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[167] with 1st driver pin 'init_x_reg[167]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[167] with 2nd driver pin 'init_x_reg[167]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[168] with 1st driver pin 'init_x_reg[168]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[168] with 2nd driver pin 'init_x_reg[168]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[169] with 1st driver pin 'init_x_reg[169]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[169] with 2nd driver pin 'init_x_reg[169]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[170] with 1st driver pin 'init_x_reg[170]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[170] with 2nd driver pin 'init_x_reg[170]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[171] with 1st driver pin 'init_x_reg[171]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[171] with 2nd driver pin 'init_x_reg[171]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[172] with 1st driver pin 'init_x_reg[172]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[172] with 2nd driver pin 'init_x_reg[172]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[173] with 1st driver pin 'init_x_reg[173]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[173] with 2nd driver pin 'init_x_reg[173]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[174] with 1st driver pin 'init_x_reg[174]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[174] with 2nd driver pin 'init_x_reg[174]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[175] with 1st driver pin 'init_x_reg[175]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[175] with 2nd driver pin 'init_x_reg[175]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[176] with 1st driver pin 'init_x_reg[176]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[176] with 2nd driver pin 'init_x_reg[176]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[177] with 1st driver pin 'init_x_reg[177]__0/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:64]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin init_x[177] with 2nd driver pin 'init_x_reg[177]/Q' [D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv:173]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|      640|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1390.484 ; gain = 241.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1390.484 ; gain = 241.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1390.484 ; gain = 241.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1390.484 ; gain = 241.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     8|
+|2     |CARRY4 |    15|
+|3     |LUT1   |    30|
+|4     |LUT2   |    72|
+|5     |LUT3   |    77|
+|6     |LUT4   |   182|
+|7     |LUT5   |   518|
+|8     |LUT6   |   265|
+|9     |FDCE   |     5|
+|10    |FDRE   |   357|
+|11    |LD     |  1576|
+|12    |IBUF   |     2|
+|13    |OBUF   |   576|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1390.484 ; gain = 241.418
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1280 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:38 . Memory (MB): peak = 1390.484 ; gain = 136.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1390.484 ; gain = 241.418
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1402.477 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1591 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1403.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1576 instances were transformed.
+  LD => LDCE: 1576 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 19 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1403.453 ; gain = 254.387
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/NCKH/ascon_test/ascon_test.runs/synth_1/ascon_update.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ascon_update_utilization_synth.rpt -pb ascon_update_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 22 10:24:58 2024...

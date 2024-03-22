@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  4 22:32:08 2024
+# Process ID: 29636
+# Current directory: D:/Vivado/NCKH/ascon_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18924 D:\Vivado\NCKH\ascon_test\ascon_test.xpr
+# Log file: D:/Vivado/NCKH/ascon_test/vivado.log
+# Journal file: D:/Vivado/NCKH/ascon_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/NCKH/ascon_test/ascon_test.xpr
+update_compile_order -fileset sources_1
+close [ open D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv w ]
+add_files D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sources_1/new/ascon_update.sv
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sim_1/new/ascon_update_tb.sv w ]
+add_files -fileset sim_1 D:/Vivado/NCKH/ascon_test/ascon_test.srcs/sim_1/new/ascon_update_tb.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ascon_update_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ascon_update [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
