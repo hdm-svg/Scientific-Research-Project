@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/LWC_config_ascon.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/LWC_config_ccw_32.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/LWC_config_32.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/design_pkg.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/LWC_rtl/NIST_LWAPI_pkg.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/CryptoCore.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/LWC_rtl/FIFO.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/LWC_rtl/data_sipo.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/LWC_rtl/PostProcessor.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/LWC_rtl/key_piso.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/LWC_rtl/data_piso.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/LWC_rtl/PreProcessor.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../../GIT/ascon-hardware/hardware/LWC_rtl/LWC.vhd" \
+"../../../../../GIT/ascon-hardware/hardware/LWC_tb/LWC_TB.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="LWC_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="LWC_TB" />
+            <top_module name="design_pkg" />
+            <top_module name="lwc_config" />
+            <top_module name="lwc_config_ascon" />
+            <top_module name="lwc_config_ccw" />
+            <top_module name="nist_lwapi_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="16406500fs"></ZoomStartTime>
+      <ZoomEndTime time="16614701fs"></ZoomEndTime>
+      <Cursor1Time time="16580000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="64" />
+   <wave_markers>
+      <marker time="130000" label="" />
+      <marker time="180000" label="" />
+      <marker time="16580000" label="" />
+      <marker time="16380000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/LWC_TB/stop_clock" type="other">
+      <obj_property name="ElementShortName">stop_clock</obj_property>
+      <obj_property name="ObjectShortName">stop_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/reset_done" type="other">
+      <obj_property name="ElementShortName">reset_done</obj_property>
+      <obj_property name="ObjectShortName">reset_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/pdi_data" type="array">
+      <obj_property name="ElementShortName">pdi_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pdi_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/pdi_data_delayed" type="array">
+      <obj_property name="ElementShortName">pdi_data_delayed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pdi_data_delayed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/pdi_valid" type="logic">
+      <obj_property name="ElementShortName">pdi_valid</obj_property>
+      <obj_property name="ObjectShortName">pdi_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/pdi_valid_delayed" type="logic">
+      <obj_property name="ElementShortName">pdi_valid_delayed</obj_property>
+      <obj_property name="ObjectShortName">pdi_valid_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/pdi_ready" type="logic">
+      <obj_property name="ElementShortName">pdi_ready</obj_property>
+      <obj_property name="ObjectShortName">pdi_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/sdi_data" type="array">
+      <obj_property name="ElementShortName">sdi_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sdi_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/sdi_data_delayed" type="array">
+      <obj_property name="ElementShortName">sdi_data_delayed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sdi_data_delayed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/sdi_valid" type="logic">
+      <obj_property name="ElementShortName">sdi_valid</obj_property>
+      <obj_property name="ObjectShortName">sdi_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/sdi_valid_delayed" type="logic">
+      <obj_property name="ElementShortName">sdi_valid_delayed</obj_property>
+      <obj_property name="ObjectShortName">sdi_valid_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/sdi_ready" type="logic">
+      <obj_property name="ElementShortName">sdi_ready</obj_property>
+      <obj_property name="ObjectShortName">sdi_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/do_data" type="array">
+      <obj_property name="ElementShortName">do_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/do_valid" type="logic">
+      <obj_property name="ElementShortName">do_valid</obj_property>
+      <obj_property name="ObjectShortName">do_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/do_last" type="logic">
+      <obj_property name="ElementShortName">do_last</obj_property>
+      <obj_property name="ObjectShortName">do_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/do_ready" type="logic">
+      <obj_property name="ElementShortName">do_ready</obj_property>
+      <obj_property name="ObjectShortName">do_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/do_ready_delayed" type="logic">
+      <obj_property name="ElementShortName">do_ready_delayed</obj_property>
+      <obj_property name="ObjectShortName">do_ready_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/rdi_data" type="array">
+      <obj_property name="ElementShortName">rdi_data[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">rdi_data[-1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/rdi_data_delayed" type="array">
+      <obj_property name="ElementShortName">rdi_data_delayed[-1:0]</obj_property>
+      <obj_property name="ObjectShortName">rdi_data_delayed[-1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/rdi_valid" type="logic">
+      <obj_property name="ElementShortName">rdi_valid</obj_property>
+      <obj_property name="ObjectShortName">rdi_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/rdi_valid_delayed" type="logic">
+      <obj_property name="ElementShortName">rdi_valid_delayed</obj_property>
+      <obj_property name="ObjectShortName">rdi_valid_delayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/rdi_ready" type="logic">
+      <obj_property name="ElementShortName">rdi_ready</obj_property>
+      <obj_property name="ObjectShortName">rdi_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/pdi_operation_count" type="other">
+      <obj_property name="ElementShortName">pdi_operation_count</obj_property>
+      <obj_property name="ObjectShortName">pdi_operation_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/cycle_counter" type="other">
+      <obj_property name="ElementShortName">cycle_counter</obj_property>
+      <obj_property name="ObjectShortName">cycle_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/idle_counter" type="other">
+      <obj_property name="ElementShortName">idle_counter</obj_property>
+      <obj_property name="ObjectShortName">idle_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/num_rand_vectors" type="other">
+      <obj_property name="ElementShortName">num_rand_vectors</obj_property>
+      <obj_property name="ObjectShortName">num_rand_vectors</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/start_cycle" type="other">
+      <obj_property name="ElementShortName">start_cycle</obj_property>
+      <obj_property name="ObjectShortName">start_cycle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/timing_started" type="other">
+      <obj_property name="ElementShortName">timing_started</obj_property>
+      <obj_property name="ObjectShortName">timing_started</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/timing_stopped" type="other">
+      <obj_property name="ElementShortName">timing_stopped</obj_property>
+      <obj_property name="ObjectShortName">timing_stopped</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_MAX_FAILURES" type="other">
+      <obj_property name="ElementShortName">G_MAX_FAILURES</obj_property>
+      <obj_property name="ObjectShortName">G_MAX_FAILURES</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_TEST_MODE" type="other">
+      <obj_property name="ElementShortName">G_TEST_MODE</obj_property>
+      <obj_property name="ObjectShortName">G_TEST_MODE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_PDI_STALLS" type="other">
+      <obj_property name="ElementShortName">G_PDI_STALLS</obj_property>
+      <obj_property name="ObjectShortName">G_PDI_STALLS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_SDI_STALLS" type="other">
+      <obj_property name="ElementShortName">G_SDI_STALLS</obj_property>
+      <obj_property name="ObjectShortName">G_SDI_STALLS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_DO_STALLS" type="other">
+      <obj_property name="ElementShortName">G_DO_STALLS</obj_property>
+      <obj_property name="ObjectShortName">G_DO_STALLS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_RDI_STALLS" type="other">
+      <obj_property name="ElementShortName">G_RDI_STALLS</obj_property>
+      <obj_property name="ObjectShortName">G_RDI_STALLS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_RANDOM_STALL" type="other">
+      <obj_property name="ElementShortName">G_RANDOM_STALL</obj_property>
+      <obj_property name="ObjectShortName">G_RANDOM_STALL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_CLK_PERIOD_PS" type="other">
+      <obj_property name="ElementShortName">G_CLK_PERIOD_PS</obj_property>
+      <obj_property name="ObjectShortName">G_CLK_PERIOD_PS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_FNAME_PDI" type="array">
+      <obj_property name="ElementShortName">G_FNAME_PDI[1:104]</obj_property>
+      <obj_property name="ObjectShortName">G_FNAME_PDI[1:104]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_FNAME_SDI" type="array">
+      <obj_property name="ElementShortName">G_FNAME_SDI[1:104]</obj_property>
+      <obj_property name="ObjectShortName">G_FNAME_SDI[1:104]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_FNAME_DO" type="array">
+      <obj_property name="ElementShortName">G_FNAME_DO[1:103]</obj_property>
+      <obj_property name="ObjectShortName">G_FNAME_DO[1:103]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_FNAME_RDI" type="array">
+      <obj_property name="ElementShortName">G_FNAME_RDI[1:17]</obj_property>
+      <obj_property name="ObjectShortName">G_FNAME_RDI[1:17]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_PRNG_RDI" type="other">
+      <obj_property name="ElementShortName">G_PRNG_RDI</obj_property>
+      <obj_property name="ObjectShortName">G_PRNG_RDI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_RANDOM_SEED" type="other">
+      <obj_property name="ElementShortName">G_RANDOM_SEED</obj_property>
+      <obj_property name="ObjectShortName">G_RANDOM_SEED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_FNAME_LOG" type="array">
+      <obj_property name="ElementShortName">G_FNAME_LOG[1:72]</obj_property>
+      <obj_property name="ObjectShortName">G_FNAME_LOG[1:72]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_FNAME_TIMING" type="array">
+      <obj_property name="ElementShortName">G_FNAME_TIMING[1:75]</obj_property>
+      <obj_property name="ObjectShortName">G_FNAME_TIMING[1:75]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_FNAME_FAILED_TVS" type="array">
+      <obj_property name="ElementShortName">G_FNAME_FAILED_TVS[1:87]</obj_property>
+      <obj_property name="ObjectShortName">G_FNAME_FAILED_TVS[1:87]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_FNAME_RESULT" type="array">
+      <obj_property name="ElementShortName">G_FNAME_RESULT[1:75]</obj_property>
+      <obj_property name="ObjectShortName">G_FNAME_RESULT[1:75]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_PRERESET_WAIT_NS" type="other">
+      <obj_property name="ElementShortName">G_PRERESET_WAIT_NS</obj_property>
+      <obj_property name="ObjectShortName">G_PRERESET_WAIT_NS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_INPUT_DELAY_NS" type="other">
+      <obj_property name="ElementShortName">G_INPUT_DELAY_NS</obj_property>
+      <obj_property name="ObjectShortName">G_INPUT_DELAY_NS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_TIMEOUT_CYCLES" type="other">
+      <obj_property name="ElementShortName">G_TIMEOUT_CYCLES</obj_property>
+      <obj_property name="ObjectShortName">G_TIMEOUT_CYCLES</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/G_VERBOSE_LEVEL" type="other">
+      <obj_property name="ElementShortName">G_VERBOSE_LEVEL</obj_property>
+      <obj_property name="ObjectShortName">G_VERBOSE_LEVEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/W_S" type="other">
+      <obj_property name="ElementShortName">W_S</obj_property>
+      <obj_property name="ObjectShortName">W_S</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/SW_S" type="other">
+      <obj_property name="ElementShortName">SW_S</obj_property>
+      <obj_property name="ObjectShortName">SW_S</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/input_delay" type="other">
+      <obj_property name="ElementShortName">input_delay</obj_property>
+      <obj_property name="ObjectShortName">input_delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/TB_HEAD" type="array">
+      <obj_property name="ElementShortName">TB_HEAD[1:6]</obj_property>
+      <obj_property name="ObjectShortName">TB_HEAD[1:6]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/INS_HEAD" type="array">
+      <obj_property name="ElementShortName">INS_HEAD[1:6]</obj_property>
+      <obj_property name="ObjectShortName">INS_HEAD[1:6]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/HDR_HEAD" type="array">
+      <obj_property name="ElementShortName">HDR_HEAD[1:6]</obj_property>
+      <obj_property name="ObjectShortName">HDR_HEAD[1:6]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/DAT_HEAD" type="array">
+      <obj_property name="ElementShortName">DAT_HEAD[1:6]</obj_property>
+      <obj_property name="ObjectShortName">DAT_HEAD[1:6]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/STT_HEAD" type="array">
+      <obj_property name="ElementShortName">STT_HEAD[1:6]</obj_property>
+      <obj_property name="ObjectShortName">STT_HEAD[1:6]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/EOF_HEAD" type="array">
+      <obj_property name="ElementShortName">EOF_HEAD[1:6]</obj_property>
+      <obj_property name="ObjectShortName">EOF_HEAD[1:6]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LWC_TB/TIMING_MODE" type="other">
+      <obj_property name="ElementShortName">TIMING_MODE</obj_property>
+      <obj_property name="ObjectShortName">TIMING_MODE</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,24 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/LWC_config_ascon.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/LWC_config_ccw_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/LWC_config_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/design_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_rtl/NIST_LWAPI_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/CryptoCore.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Asconp'
+INFO: [VRFC 10-3107] analyzing entity 'CryptoCore'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_rtl/FIFO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIFO'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_rtl/data_sipo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DATA_SIPO'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_rtl/PostProcessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PostProcessor'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_rtl/key_piso.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'KEY_PISO'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_rtl/data_piso.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DATA_PISO'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_rtl/PreProcessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PreProcessor'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_rtl/LWC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LWC'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-hardware/hardware/LWC_tb/LWC_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LWC_TB'

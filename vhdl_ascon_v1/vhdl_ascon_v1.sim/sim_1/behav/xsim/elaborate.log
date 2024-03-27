@@ -1,0 +1,33 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/vitis2020/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9a178e2444c043f18fb53a52c09b2c77 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot LWC_TB_behav xil_defaultlib.LWC_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.lwc_config
+Compiling package xil_defaultlib.nist_lwapi_pkg
+Compiling package ieee.math_real
+Compiling package xil_defaultlib.lwc_config_ccw
+Compiling package xil_defaultlib.lwc_config_ascon
+Compiling package xil_defaultlib.design_pkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.KEY_PISO [key_piso_default]
+Compiling architecture behavioral of entity xil_defaultlib.DATA_PISO [data_piso_default]
+Compiling architecture preprocessor of entity xil_defaultlib.PreProcessor [preprocessor_default]
+Compiling architecture behavior of entity xil_defaultlib.Asconp [asconp_default]
+Compiling architecture behavioral of entity xil_defaultlib.CryptoCore [cryptocore_default]
+Compiling architecture behavioral of entity xil_defaultlib.DATA_SIPO [data_sipo_default]
+Compiling architecture rtl of entity xil_defaultlib.PostProcessor [postprocessor_default]
+Compiling architecture rtl of entity xil_defaultlib.FIFO [\FIFO(g_w=32,g_depth=1)\]
+Compiling architecture rtl of entity xil_defaultlib.FIFO [\FIFO(g_w=33,g_depth=1)\]
+Compiling architecture structure of entity xil_defaultlib.LWC [lwc_default]
+Compiling architecture tb of entity xil_defaultlib.lwc_tb
+Built simulation snapshot LWC_TB_behav

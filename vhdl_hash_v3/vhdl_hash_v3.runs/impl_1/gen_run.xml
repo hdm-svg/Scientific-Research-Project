@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1711533932">
+  <File Type="ROUTE-PWR" Name="LWC_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="LWC.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="LWC_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="LWC_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="LWC.msk"/>
+  <File Type="ROUTE-CLK" Name="LWC_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="LWC.vdi"/>
+  <File Type="BG-BIT" Name="LWC.bit"/>
+  <File Type="BG-DRC" Name="LWC.drc"/>
+  <File Type="BG-BGN" Name="LWC.bgn"/>
+  <File Type="BG-BIN" Name="LWC.bin"/>
+  <File Type="BITSTR-RBT" Name="LWC.rbt"/>
+  <File Type="BITSTR-NKY" Name="LWC.nky"/>
+  <File Type="BITSTR-BMM" Name="LWC_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="LWC_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="LWC.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LWC_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="LWC.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="LWC_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="LWC.ltx"/>
+  <File Type="RCFI_FILE" Name="LWC.rcfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="LWC_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="LWC.hwdef"/>
+  <File Type="PLACE-IO" Name="LWC_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="LWC_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="LWC_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="LWC_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="LWC_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="LWC_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="LWC_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="LWC_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="LWC_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="LWC_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="LWC_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="LWC_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="LWC_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="LWC_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="LWC_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="LWC_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="LWC_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="LWC_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="LWC_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="LWC_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="LWC_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="LWC_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="LWC_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="LWC_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="LWC_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LWC_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="LWC_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="LWC.pdi"/>
+  <File Type="CFI_FILE" Name="LWC.cfi"/>
+  <File Type="RNPI_FILE" Name="LWC.rnpi"/>
+  <File Type="NPI_FILE" Name="LWC.npi"/>
+  <File Type="RBD_FILE" Name="LWC.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v3/LWC_config_ascon.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/LWC_config_ccw_32.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/LWC_config_32.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/design_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/LWC_rtl/NIST_LWAPI_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/ascon_lwc/src_rtl/v1/CryptoCore.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/LWC_rtl/FIFO.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/LWC_rtl/data_sipo.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/LWC_rtl/PostProcessor.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/LWC_rtl/key_piso.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/LWC_rtl/data_piso.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/LWC_rtl/PreProcessor.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../GIT/ascon-hardware/hardware/LWC_rtl/LWC.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="LWC"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

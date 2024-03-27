@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 27 17:05:42 2024
+# Process ID: 17712
+# Current directory: F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/vhdl_hash_v3/vhdl_hash_v3.runs/impl_1
+# Command line: vivado.exe -log LWC.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source LWC.tcl -notrace
+# Log file: F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/vhdl_hash_v3/vhdl_hash_v3.runs/impl_1/LWC.vdi
+# Journal file: F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/vhdl_hash_v3/vhdl_hash_v3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source LWC.tcl -notrace
