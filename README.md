@@ -1,8 +1,10 @@
 # Scientific-Research-Project
-**ASCON_HASH on RISC-V through a FPGA**
+**ASCON_HASH on RISC-V through an FPGA**
 - ASCON_Hash algorithm.
-- A simple RISC-V processcor.
+- A simple RISC-V processor.
 - ARTY7 35T FPGA.
+
+**Update 3 version of VHDL-ASCON** source https://github.com/ascon/ascon-hardware.git
 
 *Let's have a wonderful research journey*
 
