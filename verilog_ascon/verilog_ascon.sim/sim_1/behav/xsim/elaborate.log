@@ -1,0 +1,32 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/vitis2020/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8479ea218f554b2c8181862ba3687db0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3291] enum literal 'IDLE' width (32) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:78]
+WARNING: [VRFC 10-3291] enum literal 'LOAD_KEY' width (48) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:79]
+WARNING: [VRFC 10-3291] enum literal 'INIT' width (32) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:81]
+WARNING: [VRFC 10-3291] enum literal 'ABS_AD' width (48) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:83]
+WARNING: [VRFC 10-3291] enum literal 'PRO_AD' width (48) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:84]
+WARNING: [VRFC 10-3291] enum literal 'DOM_SEP' width (56) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:85]
+WARNING: [VRFC 10-3291] enum literal 'FINAL' width (40) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:89]
+WARNING: [VRFC 10-3291] enum literal 'SQUEEZE_TAG' width (56) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:91]
+WARNING: [VRFC 10-3291] enum literal 'VERIF_TAG' width (56) must match enum width (64) [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv" Line 35. Module ascon_core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/asconp.sv" Line 9. Module asconp_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv" Line 35. Module ascon_core doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/asconp.sv" Line 9. Module asconp_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ascon_core_sv
+Compiling module xil_defaultlib.asconp_default
+Compiling module xil_defaultlib.ascon_core
+Compiling module xil_defaultlib.tb
+WARNING: [XSIM 43-3373] "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/tb.sv" Line 94. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/tb.sv" Line 96. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/tb.sv" Line 101. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

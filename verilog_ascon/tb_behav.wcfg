@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_ascon_core_sv " />
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="196fs"></ZoomStartTime>
+      <ZoomEndTime time="405fs"></ZoomEndTime>
+      <Cursor1Time time="370fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject fp_name="/tb/SIM_CYCLES" type="array">
+      <obj_property name="ElementShortName">SIM_CYCLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SIM_CYCLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/tb_word_cnt" type="array">
+      <obj_property name="ElementShortName">tb_word_cnt[23:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_word_cnt[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/op" type="array">
+      <obj_property name="ElementShortName">op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/flags" type="array">
+      <obj_property name="ElementShortName">flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">flags[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fd" type="array">
+      <obj_property name="ElementShortName">fd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/key" type="array">
+      <obj_property name="ElementShortName">key[31:0]</obj_property>
+      <obj_property name="ObjectShortName">key[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/key_valid" type="logic">
+      <obj_property name="ElementShortName">key_valid</obj_property>
+      <obj_property name="ObjectShortName">key_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/key_ready" type="logic">
+      <obj_property name="ElementShortName">key_ready</obj_property>
+      <obj_property name="ObjectShortName">key_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdi" type="array">
+      <obj_property name="ElementShortName">bdi[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bdi[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdi_valid" type="logic">
+      <obj_property name="ElementShortName">bdi_valid</obj_property>
+      <obj_property name="ObjectShortName">bdi_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdi_ready" type="logic">
+      <obj_property name="ElementShortName">bdi_ready</obj_property>
+      <obj_property name="ObjectShortName">bdi_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdi_type" type="array">
+      <obj_property name="ElementShortName">bdi_type[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bdi_type[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdi_eot" type="logic">
+      <obj_property name="ElementShortName">bdi_eot</obj_property>
+      <obj_property name="ObjectShortName">bdi_eot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdi_eoi" type="logic">
+      <obj_property name="ElementShortName">bdi_eoi</obj_property>
+      <obj_property name="ObjectShortName">bdi_eoi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/decrypt" type="logic">
+      <obj_property name="ElementShortName">decrypt</obj_property>
+      <obj_property name="ObjectShortName">decrypt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/hash" type="logic">
+      <obj_property name="ElementShortName">hash</obj_property>
+      <obj_property name="ObjectShortName">hash</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdo" type="array">
+      <obj_property name="ElementShortName">bdo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bdo[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdo_valid" type="logic">
+      <obj_property name="ElementShortName">bdo_valid</obj_property>
+      <obj_property name="ObjectShortName">bdo_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdo_ready" type="logic">
+      <obj_property name="ElementShortName">bdo_ready</obj_property>
+      <obj_property name="ObjectShortName">bdo_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdo_type" type="array">
+      <obj_property name="ElementShortName">bdo_type[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bdo_type[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/bdo_eot" type="logic">
+      <obj_property name="ElementShortName">bdo_eot</obj_property>
+      <obj_property name="ObjectShortName">bdo_eot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/auth" type="logic">
+      <obj_property name="ElementShortName">auth</obj_property>
+      <obj_property name="ObjectShortName">auth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/auth_valid" type="logic">
+      <obj_property name="ElementShortName">auth_valid</obj_property>
+      <obj_property name="ObjectShortName">auth_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/auth_ready" type="logic">
+      <obj_property name="ElementShortName">auth_ready</obj_property>
+      <obj_property name="ObjectShortName">auth_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_DO_ENC" type="array">
+      <obj_property name="ElementShortName">OP_DO_ENC[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_DO_ENC[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_DO_DEC" type="array">
+      <obj_property name="ElementShortName">OP_DO_DEC[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_DO_DEC[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_DO_HASH" type="array">
+      <obj_property name="ElementShortName">OP_DO_HASH[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_DO_HASH[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_LD_KEY" type="array">
+      <obj_property name="ElementShortName">OP_LD_KEY[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_LD_KEY[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_LD_NONCE" type="array">
+      <obj_property name="ElementShortName">OP_LD_NONCE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_LD_NONCE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_LD_AD" type="array">
+      <obj_property name="ElementShortName">OP_LD_AD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_LD_AD[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_LD_PT" type="array">
+      <obj_property name="ElementShortName">OP_LD_PT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_LD_PT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_LD_CT" type="array">
+      <obj_property name="ElementShortName">OP_LD_CT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_LD_CT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OP_LD_TAG" type="array">
+      <obj_property name="ElementShortName">OP_LD_TAG[3:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_LD_TAG[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/D_NULL" type="array">
+      <obj_property name="ElementShortName">D_NULL[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D_NULL[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/D_NONCE" type="array">
+      <obj_property name="ElementShortName">D_NONCE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D_NONCE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/D_AD" type="array">
+      <obj_property name="ElementShortName">D_AD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D_AD[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/D_PTCT" type="array">
+      <obj_property name="ElementShortName">D_PTCT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D_PTCT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/D_TAG" type="array">
+      <obj_property name="ElementShortName">D_TAG[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D_TAG[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/D_HASH" type="array">
+      <obj_property name="ElementShortName">D_HASH[3:0]</obj_property>
+      <obj_property name="ObjectShortName">D_HASH[3:0]</obj_property>
+   </wvobject>
+</wave_config>

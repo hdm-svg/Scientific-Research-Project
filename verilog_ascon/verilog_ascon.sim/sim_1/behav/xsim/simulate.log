@@ -1,0 +1,25 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ERROR: Could not open vcd file . A VCD file by name tb.vcd has already been opened. Only one VCD file is allowed to be open.
+c => 13e3ad30
+c => ab2075c8
+c => 44e2d23f
+c => 15a86348
+t => 31639907
+t => f2d82fd7
+t => 58725e70
+t => 6ce3c1f7
+p => 4fcf816f
+p => b65763d3
+p => a38824bb
+p => 6aac9780
+v => 1
+h => 1043733a
+h => e4ce9a82
+h => 4b4ee6df
+h => 7d849196
+h => 966654cc
+h => a0af861c
+h => 8bab91e1
+h => 6ae682aa
+$finish called at time : 30011 ps : File "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/tb.sv" Line 217

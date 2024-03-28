@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../GIT/ascon-verilog/rtl/ascon_core.sv" \
+"../../../../../GIT/ascon-verilog/rtl/asconp.sv" \
+"../../../../../GIT/ascon-verilog/rtl/tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,34 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_core
+INFO: [VRFC 10-2458] undeclared symbol op_ld_key_req, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:106]
+INFO: [VRFC 10-2458] undeclared symbol op_aead_req, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:107]
+INFO: [VRFC 10-2458] undeclared symbol op_hash_req, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:108]
+INFO: [VRFC 10-2458] undeclared symbol idle_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:110]
+INFO: [VRFC 10-2458] undeclared symbol ld_key_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:111]
+INFO: [VRFC 10-2458] undeclared symbol ld_key_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:112]
+INFO: [VRFC 10-2458] undeclared symbol ld_nonce_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:113]
+INFO: [VRFC 10-2458] undeclared symbol ld_nonce_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:114]
+INFO: [VRFC 10-2458] undeclared symbol init_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:115]
+INFO: [VRFC 10-2458] undeclared symbol init_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:116]
+INFO: [VRFC 10-2458] undeclared symbol key_add_2_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:117]
+INFO: [VRFC 10-2458] undeclared symbol abs_ad_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:119]
+INFO: [VRFC 10-2458] undeclared symbol abs_ad_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:120]
+INFO: [VRFC 10-2458] undeclared symbol pro_ad_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:121]
+INFO: [VRFC 10-2458] undeclared symbol pro_ad_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:122]
+INFO: [VRFC 10-2458] undeclared symbol abs_ptct_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:124]
+INFO: [VRFC 10-2458] undeclared symbol abs_ptct_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:125]
+INFO: [VRFC 10-2458] undeclared symbol pro_ptct_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:126]
+INFO: [VRFC 10-2458] undeclared symbol pro_ptct_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:127]
+INFO: [VRFC 10-2458] undeclared symbol final_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:129]
+INFO: [VRFC 10-2458] undeclared symbol final_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:130]
+INFO: [VRFC 10-2458] undeclared symbol sqz_hash_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:132]
+INFO: [VRFC 10-2458] undeclared symbol sqz_hash_done1, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:133]
+INFO: [VRFC 10-2458] undeclared symbol sqz_hash_done2, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:134]
+INFO: [VRFC 10-2458] undeclared symbol sqz_tag_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:135]
+INFO: [VRFC 10-2458] undeclared symbol sqz_tag_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:136]
+INFO: [VRFC 10-2458] undeclared symbol ver_tag_do, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:137]
+INFO: [VRFC 10-2458] undeclared symbol ver_tag_done, assumed default net type wire [F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/ascon_core.sv:138]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/asconp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module asconp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Hieu/Onedrive/OneDrive - actvn.edu.vn/year4/NCKH/GIT/ascon-verilog/rtl/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
