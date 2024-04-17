@@ -9,12 +9,12 @@ module ascon_update
         input logic clk,
         input logic rst_n,
         
-        input logic msg_valid, 
-        input logic msg_state_in,
-        input logic [1:0] msg_length,
+        input logic msg_valid, //thong bao co ban tin nho moi den
+        input logic msg_state_in, //cpu gui valid de thong bao du lieu dang truyen do
+        input logic [1:0] msg_length, //do dai cua khoi nho msg
         input logic [127:0] msg,
-        output logic msg_state_out,
-        output logic msg_ready,
+        output logic msg_state_out,//thong bao cho cpu biet core dang san sang nhan ban tin lon moi hoac dang ban
+        output logic msg_ready,//thong bao core san sang nhan ban tin nho moi tiep theo
         output logic [255:0] H
     );
     logic [63:0] xo0, xo1, xo2, xo3, xo4;

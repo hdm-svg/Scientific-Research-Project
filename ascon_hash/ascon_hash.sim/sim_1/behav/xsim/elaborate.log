@@ -6,12 +6,4 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3705] select index 0 into 'M1' is out of bounds [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:183]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Permutation
-Compiling module xil_defaultlib.permutation_loop
-Compiling module xil_defaultlib.ascon_update
-Compiling module xil_defaultlib.ascon_update_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot ascon_update_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

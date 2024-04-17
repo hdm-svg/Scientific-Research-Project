@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1713162517">
   <File Type="PA-TCL" Name="ascon_update.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ascon_update_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ascon_update_reports.tcl"/>
   <File Type="RDS-RDS" Name="ascon_update.vds"/>
   <File Type="RDS-UTIL" Name="ascon_update_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ascon_update_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="ascon_update.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ascon_update_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ascon_update_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Permutation.sv">
