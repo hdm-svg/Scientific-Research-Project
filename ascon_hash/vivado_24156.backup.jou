@@ -1,0 +1,195 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr  9 07:46:06 2024
+# Process ID: 24156
+# Current directory: D:/Vivado/NCKH/ascon_hash
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22580 D:\Vivado\NCKH\ascon_hash\ascon_hash.xpr
+# Log file: D:/Vivado/NCKH/ascon_hash/vivado.log
+# Journal file: D:/Vivado/NCKH/ascon_hash\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/NCKH/ascon_hash/ascon_hash.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ascon_update_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source ascon_update_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+current_wave_config {Untitled 1}
+add_wave {{/ascon_update_tb/uut}} 
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+refresh_design
+close_design
+launch_simulation
+launch_simulation
+launch_simulation

@@ -1,0 +1,2382 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 11 23:15:14 2024
+# Process ID: 1936
+# Current directory: D:/Vivado/NCKH/ascon_hash
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7928 D:\Vivado\NCKH\ascon_hash\ascon_hash.xpr
+# Log file: D:/Vivado/NCKH/ascon_hash/vivado.log
+# Journal file: D:/Vivado/NCKH/ascon_hash\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/NCKH/ascon_hash/ascon_hash.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Vivado/NCKH/ascon_hash/ascon_hash.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1139.551 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3818] variable 'i' is driven by invalid combination of procedural drivers [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv:30]
+WARNING: [VRFC 10-2921] 'i' driven by this always_ff block should not be driven by any other process [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv:70]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3818] variable 'i' is driven by invalid combination of procedural drivers [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv:30]
+WARNING: [VRFC 10-2921] 'i' driven by this always_ff block should not be driven by any other process [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv:70]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::VeriVisitor::TraverseNode+0x8) [0x7ffc62912408]
+[2] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[3] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62916330]
+[4] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[5] (Verific::VeriVisitor::Visit+0x63) [0x7ffc62913213]
+[6] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff6f04a67d2]
+[7] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[8] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62916330]
+[9] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[10] (Verific::VeriVisitor::Visit+0x63) [0x7ffc62913213]
+[11] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff6f04a67d2]
+[12] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[13] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62916330]
+[14] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[15] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62912a38]
+[16] (ISIMC::VlogCompiler::transform+0x13fb6) [0x7ff6f049f1f6]
+[17] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[18] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62912b88]
+[19] (ISIMC::VlogCompiler::transform+0x14668) [0x7ff6f049f8a8]
+[20] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[21] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62916330]
+[22] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[23] (Verific::VeriVisitor::Visit+0x63) [0x7ffc62913de3]
+[24] (ISIMC::VlogCompiler::transform+0x2113c) [0x7ff6f04ac37c]
+[25] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62912468]
+[26] (ISIMC::VlogCompiler::transform+0x12a64) [0x7ff6f049dca4]
+[27] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[28] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62915058]
+[29] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[30] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[31] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff6f04b1ee5]
+[32] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[33] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62915058]
+[34] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[35] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[36] (ISIMC::VlogCompiler::transform+0x115) [0x7ff6f048b355]
+[37]  [0x7ff6f0386e38]
+[38]  [0x7ff6f0398d11]
+[39]  [0x7ff6f0396d4e]
+[40] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff6f1f9194c]
+[41] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::VeriConcat::EvaluateConstraintInternal+0x62) [0x7ffc627881a2]
+[2] (ISIMC::VlogCompiler::transform+0x13565) [0x7ff6f049e7a5]
+[3] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[4] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62916330]
+[5] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[6] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62912a38]
+[7] (ISIMC::VlogCompiler::transform+0x13fb6) [0x7ff6f049f1f6]
+[8] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[9] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62912b88]
+[10] (ISIMC::VlogCompiler::transform+0x14668) [0x7ff6f049f8a8]
+[11] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[12] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62916330]
+[13] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[14] (Verific::VeriVisitor::Visit+0x63) [0x7ffc62913de3]
+[15] (ISIMC::VlogCompiler::transform+0x2113c) [0x7ff6f04ac37c]
+[16] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62912468]
+[17] (ISIMC::VlogCompiler::transform+0x12a64) [0x7ff6f049dca4]
+[18] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[19] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62915058]
+[20] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[21] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[22] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff6f04b1ee5]
+[23] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62912373]
+[24] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62915058]
+[25] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[26] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[27] (ISIMC::VlogCompiler::transform+0x115) [0x7ff6f048b355]
+[28]  [0x7ff6f0386e38]
+[29]  [0x7ff6f0398d11]
+[30]  [0x7ff6f0396d4e]
+[31] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff6f1f9194c]
+[32] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/xsim.dir/ascon_update_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 11 23:20:18 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ascon_update_tb_behav -key {Behavioral:sim_1:Functional:ascon_update_tb} -tclbatch {ascon_update_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source ascon_update_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ascon_update_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1140.730 ; gain = 1.180
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" Line 2. Module permutation_loop doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" Line 2. Module permutation_loop doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ascon_update_tb_behav -key {Behavioral:sim_1:Functional:ascon_update_tb} -tclbatch {ascon_update_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source ascon_update_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ascon_update_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1155.395 ; gain = 4.379
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::Array::Size+0x0) [0x7ffc629917c0]
+[2] (ISIMC::VlogCompiler::transform+0x47ecd) [0x7ff6f04d310d]
+[3] (ISIMC::VlogCompiler::transform+0x2649e) [0x7ff6f04b16de]
+[4] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[5] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff6f04b1ee5]
+[6] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[7] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62d85058]
+[8] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[9] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[10] (ISIMC::VlogCompiler::transform+0x115) [0x7ff6f048b355]
+[11]  [0x7ff6f0386e38]
+[12]  [0x7ff6f0398d11]
+[13]  [0x7ff6f0396d4e]
+[14] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff6f1f9194c]
+[15] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::VeriVisitor::TraverseNode+0x8) [0x7ffc62d82408]
+[2] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[3] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62d83068]
+[4] (ISIMC::VlogCompiler::transform+0x1b3b3) [0x7ff6f04a65f3]
+[5] (Verific::VeriVisitor::Visit+0x58) [0x7ffc62d829b8]
+[6] (ISIMC::VlogCompiler::transform+0x13f2a) [0x7ff6f049f16a]
+[7] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[8] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62d86330]
+[9] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[10] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62d82a38]
+[11] (ISIMC::VlogCompiler::transform+0x13fb6) [0x7ff6f049f1f6]
+[12] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[13] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62d82b88]
+[14] (ISIMC::VlogCompiler::transform+0x14668) [0x7ff6f049f8a8]
+[15] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[16] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62d86330]
+[17] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[18] (Verific::VeriVisitor::Visit+0x63) [0x7ffc62d83de3]
+[19] (ISIMC::VlogCompiler::transform+0x2113c) [0x7ff6f04ac37c]
+[20] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62d82468]
+[21] (ISIMC::VlogCompiler::transform+0x12a64) [0x7ff6f049dca4]
+[22] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[23] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62d85058]
+[24] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[25] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[26] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff6f04b1ee5]
+[27] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[28] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62d85058]
+[29] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[30] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[31] (ISIMC::VlogCompiler::transform+0x115) [0x7ff6f048b355]
+[32]  [0x7ff6f0386e38]
+[33]  [0x7ff6f0398d11]
+[34]  [0x7ff6f0396d4e]
+[35] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff6f1f9194c]
+[36] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s) while executing 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::VeriVisitor::TraverseNode+0x8) [0x7ffc62d82408]
+[2] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[3] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62d86330]
+[4] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[5] (Verific::VeriVisitor::Visit+0x63) [0x7ffc62d83213]
+[6] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff6f04a67d2]
+[7] (Verific::VeriVisitor::Visit+0x7e) [0x7ffc62d8322e]
+[8] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff6f04a67d2]
+[9] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[10] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62d86330]
+[11] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[12] (Verific::VeriVisitor::Visit+0x63) [0x7ffc62d83213]
+[13] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff6f04a67d2]
+[14] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[15] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62d86330]
+[16] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[17] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62d82a38]
+[18] (ISIMC::VlogCompiler::transform+0x13fb6) [0x7ff6f049f1f6]
+[19] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[20] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62d82b88]
+[21] (ISIMC::VlogCompiler::transform+0x14668) [0x7ff6f049f8a8]
+[22] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[23] (Verific::VeriVisitor::Visit+0x70) [0x7ffc62d86330]
+[24] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff6f04b8321]
+[25] (Verific::VeriVisitor::Visit+0x63) [0x7ffc62d83de3]
+[26] (ISIMC::VlogCompiler::transform+0x2113c) [0x7ff6f04ac37c]
+[27] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62d82468]
+[28] (ISIMC::VlogCompiler::transform+0x12a64) [0x7ff6f049dca4]
+[29] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[30] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62d85058]
+[31] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[32] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[33] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff6f04b1ee5]
+[34] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[35] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62d85058]
+[36] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[37] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[38] (ISIMC::VlogCompiler::transform+0x115) [0x7ff6f048b355]
+[39]  [0x7ff6f0386e38]
+[40]  [0x7ff6f0398d11]
+[41]  [0x7ff6f0396d4e]
+[42] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff6f1f9194c]
+[43] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ascon_update_tb_behav -key {Behavioral:sim_1:Functional:ascon_update_tb} -tclbatch {ascon_update_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source ascon_update_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ascon_update_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1158.957 ; gain = 3.562
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (ISIMC::VlogCompiler::transform+0x20967) [0x7ff6f04abba7]
+[2] (Verific::VeriVisitor::Visit+0x48) [0x7ffc62d837a8]
+[3] (ISIMC::VlogCompiler::transform+0x1e6b4) [0x7ff6f04a98f4]
+[4] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[5] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62d85058]
+[6] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[7] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[8] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff6f04b1ee5]
+[9] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffc62d82373]
+[10] (Verific::VeriVisitor::Visit+0x78) [0x7ffc62d85058]
+[11] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff6f04b150f]
+[12] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff6f04962c9]
+[13] (ISIMC::VlogCompiler::transform+0x115) [0x7ff6f048b355]
+[14]  [0x7ff6f0386e38]
+[15]  [0x7ff6f0398d11]
+[16]  [0x7ff6f0396d4e]
+[17] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff6f1f9194c]
+[18] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::VeriVisitor::TraverseNode+0x11) [0x7ffcca5f2411]
+[2] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[3] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[4] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[5] (Verific::VeriVisitor::Visit+0x63) [0x7ffcca5f3213]
+[6] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff7fb4267d2]
+[7] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[8] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[9] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[10] (Verific::VeriVisitor::Visit+0x63) [0x7ffcca5f3213]
+[11] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff7fb4267d2]
+[12] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[13] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[14] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[15] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f2a38]
+[16] (ISIMC::VlogCompiler::transform+0x13fb6) [0x7ff7fb41f1f6]
+[17] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[18] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f2b88]
+[19] (ISIMC::VlogCompiler::transform+0x14668) [0x7ff7fb41f8a8]
+[20] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[21] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[22] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[23] (Verific::VeriVisitor::Visit+0x63) [0x7ffcca5f3de3]
+[24] (ISIMC::VlogCompiler::transform+0x2113c) [0x7ff7fb42c37c]
+[25] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f2468]
+[26] (ISIMC::VlogCompiler::transform+0x12a64) [0x7ff7fb41dca4]
+[27] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[28] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[29] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[30] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[31] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff7fb431ee5]
+[32] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[33] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[34] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[35] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[36] (ISIMC::VlogCompiler::transform+0x115) [0x7ff7fb40b355]
+[37]  [0x7ff7fb306e38]
+[38]  [0x7ff7fb318d11]
+[39]  [0x7ff7fb316d4e]
+[40] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff7fcf1194c]
+[41] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ascon_update_tb_behav -key {Behavioral:sim_1:Functional:ascon_update_tb} -tclbatch {ascon_update_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source ascon_update_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ascon_update_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1163.832 ; gain = 4.875
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/ascon_update_tb/uut}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.957 ; gain = 0.000
+run 10 us
+$finish called at time : 5270 ns : File "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" Line 96
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s) while executing 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::VeriVisitor::TraverseNode+0x8) [0x7ffcca5f2408]
+[2] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[3] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f2b88]
+[4] (ISIMC::VlogCompiler::transform+0x14668) [0x7ff7fb41f8a8]
+[5] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[6] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[7] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[8] (Verific::VeriVisitor::Visit+0x63) [0x7ffcca5f3de3]
+[9] (ISIMC::VlogCompiler::transform+0x2113c) [0x7ff7fb42c37c]
+[10] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f2468]
+[11] (ISIMC::VlogCompiler::transform+0x12a64) [0x7ff7fb41dca4]
+[12] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[13] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[14] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[15] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[16] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff7fb431ee5]
+[17] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[18] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[19] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[20] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[21] (ISIMC::VlogCompiler::transform+0x115) [0x7ff7fb40b355]
+[22]  [0x7ff7fb306e38]
+[23]  [0x7ff7fb318d11]
+[24]  [0x7ff7fb316d4e]
+[25] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff7fcf1194c]
+[26] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (ISIMC::VlogCompiler::transform+0x20967) [0x7ff7fb42bba7]
+[2] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f37a8]
+[3] (ISIMC::VlogCompiler::transform+0x1e6b4) [0x7ff7fb4298f4]
+[4] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[5] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[6] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[7] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[8] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff7fb431ee5]
+[9] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[10] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[11] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[12] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[13] (ISIMC::VlogCompiler::transform+0x115) [0x7ff7fb40b355]
+[14]  [0x7ff7fb306e38]
+[15]  [0x7ff7fb318d11]
+[16]  [0x7ff7fb316d4e]
+[17] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff7fcf1194c]
+[18] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s) while executing 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (ISIMC::VlogCompiler::transform+0x4ab5d) [0x7ff7fb455d9d]
+[2] (ISIMC::VlogCompiler::transform+0x1c2db) [0x7ff7fb42751b]
+[3] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[4] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[5] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[6] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[7] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff7fb431ee5]
+[8] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[9] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[10] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[11] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[12] (ISIMC::VlogCompiler::transform+0x115) [0x7ff7fb40b355]
+[13]  [0x7ff7fb306e38]
+[14]  [0x7ff7fb318d11]
+[15]  [0x7ff7fb316d4e]
+[16] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff7fcf1194c]
+[17] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::VeriVisitor::TraverseNode+0x11) [0x7ffcca5f2411]
+[2] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[3] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[4] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[5] (Verific::VeriVisitor::Visit+0x63) [0x7ffcca5f3213]
+[6] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff7fb4267d2]
+[7] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[8] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[9] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[10] (Verific::VeriVisitor::Visit+0x63) [0x7ffcca5f3213]
+[11] (ISIMC::VlogCompiler::transform+0x1b592) [0x7ff7fb4267d2]
+[12] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[13] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[14] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[15] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f2a38]
+[16] (ISIMC::VlogCompiler::transform+0x13fb6) [0x7ff7fb41f1f6]
+[17] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[18] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f2b88]
+[19] (ISIMC::VlogCompiler::transform+0x14668) [0x7ff7fb41f8a8]
+[20] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[21] (Verific::VeriVisitor::Visit+0x70) [0x7ffcca5f6330]
+[22] (ISIMC::VlogCompiler::transform+0x2d0e1) [0x7ff7fb438321]
+[23] (Verific::VeriVisitor::Visit+0x63) [0x7ffcca5f3de3]
+[24] (ISIMC::VlogCompiler::transform+0x2113c) [0x7ff7fb42c37c]
+[25] (Verific::VeriVisitor::Visit+0x48) [0x7ffcca5f2468]
+[26] (ISIMC::VlogCompiler::transform+0x12a64) [0x7ff7fb41dca4]
+[27] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[28] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[29] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[30] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[31] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff7fb431ee5]
+[32] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[33] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[34] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[35] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[36] (ISIMC::VlogCompiler::transform+0x115) [0x7ff7fb40b355]
+[37]  [0x7ff7fb306e38]
+[38]  [0x7ff7fb318d11]
+[39]  [0x7ff7fb316d4e]
+[40] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff7fcf1194c]
+[41] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (ISIMC::VlogCompiler::transform+0x4ab5d) [0x7ff7fb455d9d]
+[2] (ISIMC::VlogCompiler::transform+0x1c2db) [0x7ff7fb42751b]
+[3] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[4] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[5] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[6] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[7] (ISIMC::VlogCompiler::transform+0x26ca5) [0x7ff7fb431ee5]
+[8] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[9] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[10] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[11] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[12] (ISIMC::VlogCompiler::transform+0x115) [0x7ff7fb40b355]
+[13]  [0x7ff7fb306e38]
+[14]  [0x7ff7fb318d11]
+[15]  [0x7ff7fb316d4e]
+[16] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff7fcf1194c]
+[17] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+ERROR: [XSIM 43-3294] Signal EXCEPTION_ACCESS_VIOLATION received.
+Printing stacktrace...
+
+[0] (KiUserExceptionDispatcher+0x2e) [0x7ffd4133340e]
+[1] (Verific::VeriArrayValue::ToExpression+0x2d8) [0x7ffcca384818]
+[2] (Verific::VeriExpression::StaticEvaluateToExprInternal+0x650) [0x7ffcca443870]
+[3] (ISIMC::VlogCompiler::transform+0x1e241) [0x7ff7fb429481]
+[4] (Verific::VeriVisitor::TraverseArray+0x43) [0x7ffcca5f2373]
+[5] (Verific::VeriVisitor::Visit+0x78) [0x7ffcca5f5058]
+[6] (ISIMC::VlogCompiler::transform+0x262cf) [0x7ff7fb43150f]
+[7] (ISIMC::VlogCompiler::transform+0xb089) [0x7ff7fb4162c9]
+[8] (ISIMC::VlogCompiler::transform+0x115) [0x7ff7fb40b355]
+[9]  [0x7ff7fb306e38]
+[10]  [0x7ff7fb318d11]
+[11]  [0x7ff7fb316d4e]
+[12] (boost::archive::detail::iserializer<boost::archive::binary_iarchive,ModuleSerialization>::load_object_data+0x16846cc) [0x7ff7fcf1194c]
+[13] (BaseThreadInitThunk+0x1d) [0x7ffd3f87257d]
+
+Done
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+ERROR: [VRFC 10-2989] 'msg1' is not declared [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:56]
+ERROR: [VRFC 10-1775] range must be bounded by constant expressions [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:56]
+ERROR: [VRFC 10-2989] 'msg2' is not declared [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:57]
+ERROR: [VRFC 10-1775] range must be bounded by constant expressions [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:57]
+ERROR: [VRFC 10-2989] 'msg3' is not declared [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:58]
+ERROR: [VRFC 10-1775] range must be bounded by constant expressions [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:58]
+ERROR: [VRFC 10-2989] 'msg4' is not declared [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:59]
+ERROR: [VRFC 10-1775] range must be bounded by constant expressions [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:59]
+ERROR: [VRFC 10-2865] module 'ascon_update_tb' ignored due to previous errors [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv:11]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ascon_update_tb_behav -key {Behavioral:sim_1:Functional:ascon_update_tb} -tclbatch {ascon_update_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source ascon_update_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ascon_update_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1173.984 ; gain = 7.227
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1174.176 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1176.078 ; gain = 0.000
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/ascon_update_tb/uut}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1176.078 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1176.078 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1181.562 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1181.562 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1184.715 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1184.715 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1184.715 ; gain = 0.000
+run 10 us
+$finish called at time : 5290 ns : File "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" Line 97
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1184.715 ; gain = 0.000
+run 10 us
+$finish called at time : 5330 ns : File "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" Line 97
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2003.668 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2003.668 ; gain = 0.000
+run 10 us
+$finish called at time : 5330 ns : File "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" Line 97
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2003.668 ; gain = 0.000
+run 10 us
+$finish called at time : 5330 ns : File "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" Line 97
+run 10 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ascon_update_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj ascon_update_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/Permutation.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Permutation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/ascon_update.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sources_1/new/permutation_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascon_update_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/NCKH/ascon_hash/ascon_hash.sim/sim_1/behav/xsim'
+"xelab -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e06c4e905ceb4678a0b76ec8981081f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot ascon_update_tb_behav xil_defaultlib.ascon_update_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Permutation
+Compiling module xil_defaultlib.permutation_loop
+Compiling module xil_defaultlib.ascon_update
+Compiling module xil_defaultlib.ascon_update_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ascon_update_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2003.668 ; gain = 0.000
+run 10 us
+$finish called at time : 5330 ns : File "D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/sim_1/new/ascon_update_tb.sv" Line 97
+launch_runs synth_1 -jobs 8
+[Fri Apr 12 01:03:13 2024] Launched synth_1...
+Run output will be captured here: D:/Vivado/NCKH/ascon_hash/ascon_hash.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2003.668 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2003.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2003.668 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} -add [get_ports clk]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+file mkdir D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/constrs_1/new
+close [ open D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/constrs_1/new/constraints.xdc
+set_property target_constrs_file D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/constrs_1/new/constraints.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr 12 01:08:43 2024] Launched synth_1...
+Run output will be captured here: D:/Vivado/NCKH/ascon_hash/ascon_hash.runs/synth_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2493.195 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/Vivado/NCKH/ascon_hash/ascon_hash.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2493.195 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 12 16:44:18 2024...

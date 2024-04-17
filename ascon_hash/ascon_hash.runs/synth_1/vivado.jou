@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 15 13:28:39 2024
+# Process ID: 3940
+# Current directory: D:/Vivado/NCKH/ascon_hash/ascon_hash.runs/synth_1
+# Command line: vivado.exe -log ascon_update.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ascon_update.tcl
+# Log file: D:/Vivado/NCKH/ascon_hash/ascon_hash.runs/synth_1/ascon_update.vds
+# Journal file: D:/Vivado/NCKH/ascon_hash/ascon_hash.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ascon_update.tcl -notrace
