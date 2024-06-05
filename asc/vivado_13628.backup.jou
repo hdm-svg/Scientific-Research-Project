@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun  4 21:02:19 2024
+# Process ID: 13628
+# Current directory: D:/Vivado/NCKH/asc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16800 D:\Vivado\NCKH\asc\asc.xpr
+# Log file: D:/Vivado/NCKH/asc/vivado.log
+# Journal file: D:/Vivado/NCKH/asc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/NCKH/asc/asc.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation

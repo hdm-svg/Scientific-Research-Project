@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"permutation_loop_tb_time_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../asc.srcs/sim_1/new/permutation_loop_tb.sv" \
+
+# Do not sort compile order
+nosort
