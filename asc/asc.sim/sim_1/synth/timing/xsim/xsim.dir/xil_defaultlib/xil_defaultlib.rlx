@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/Vivado/NCKH/asc/asc.sim/sim_1/synth/timing/xsim/permutation_loop_tb_time_synth.v,1717523924,verilog,,,,glbl;permutation_loop,,uvm,,,,,,
+D:/Vivado/NCKH/asc/asc.srcs/sim_1/new/ascon_update_tb.sv,1717499640,systemVerilog,,,,ascon_update_tb,,uvm,,,,,,
+D:/Vivado/NCKH/asc/asc.srcs/sim_1/new/permutation_loop_tb.sv,1711104921,systemVerilog,,,,permutation_loop_tb,,uvm,,,,,,

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../asc.srcs/sources_1/new/Permutation.sv" \
+"../../../../asc.srcs/sources_1/new/ascon_update.sv" \
+"../../../../asc.srcs/sources_1/new/init_IV.sv" \
+"../../../../asc.srcs/sources_1/new/permutation_loop.sv" \
+"../../../../asc.srcs/sim_1/new/ascon_update_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

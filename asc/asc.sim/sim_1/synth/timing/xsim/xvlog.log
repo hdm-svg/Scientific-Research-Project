@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/NCKH/asc/asc.sim/sim_1/synth/timing/xsim/permutation_loop_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Vivado/NCKH/asc/asc.srcs/sim_1/new/permutation_loop_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module permutation_loop_tb
